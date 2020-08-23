@@ -64,7 +64,7 @@ h1 {
 .socialmedia {
     display: flex;
     justify-content: center;
-    margin-top: -3em;
+    /* margin-top: -3em; */
 }
 
 .img-avatar {
