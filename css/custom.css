@@ -219,6 +219,16 @@ a.fab:hover::after {
 }
 
 
+/*ipad*/
+@media (max-width: 900px) {
+
+    .img-avatar-size {
+        margin: auto;
+        width: 450px;
+    }
+
+
+}
 
 
 
@@ -244,7 +254,8 @@ a.fab:hover::after {
         align-content: stretch;
 
     }
-/* .coloum-kanan-skill {} */
+
+    /* .coloum-kanan-skill {} */
 
     .text-skill-layout {
         margin: 0px;
