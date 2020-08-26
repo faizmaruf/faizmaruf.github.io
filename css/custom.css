@@ -68,12 +68,15 @@ h1 {
 }
 
 .img-avatar {
+    display: flex;
+    flex-direction: column;
     margin: 150px auto auto;
 
 }
 
 .img-avatar-size {
-    width: 535px;
+    margin: auto;
+    width: 90%;
 }
 
 
@@ -219,17 +222,6 @@ a.fab:hover::after {
 }
 
 
-/*ipad*/
-@media (max-width: 900px) {
-
-    .img-avatar-size {
-        margin: auto;
-        width: 450px;
-    }
-
-
-}
-
 
 
 /*ipad*/
@@ -237,7 +229,7 @@ a.fab:hover::after {
 
     .img-avatar-size {
         margin: auto;
-        width: 450px;
+        width: 100%;
     }
 
     .coloum-kiri {
@@ -284,7 +276,7 @@ a.fab:hover::after {
 
     .img-avatar-size {
         margin: auto;
-        width: 320px;
+        width: 80%;
     }
 
     .container-skill {
@@ -310,7 +302,7 @@ a.fab:hover::after {
 
     .img-avatar-size {
         margin: auto;
-        width: 290px;
+        width: 80%;
     }
 
     .coloum-kiri {
