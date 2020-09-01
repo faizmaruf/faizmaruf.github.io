@@ -271,4 +271,7 @@ a {
         line-height: 30px;
     }
 
+    .hero .content .content-container {
+        margin-top: 60px;
+    }
 }
