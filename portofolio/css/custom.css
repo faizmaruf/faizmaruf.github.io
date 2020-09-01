@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid yellow;
-} */
+}
 
 html {
     margin: 0;
@@ -241,18 +241,25 @@ a.fab:hover::after {
         margin-top: -1em;
     }
 
-    .coloum-kiri-skill {
-
-        align-content: stretch;
-
-    }
-
-    /* .coloum-kanan-skill {} */
 
     .text-skill-layout {
         margin: 0px;
         line-height: 30px;
     }
+
+    .container-skill {
+
+        justify-content: space-evenly;
+        margin: 5px auto;
+        padding: 20px;
+    }
+
+    .coloum-kiri-skill {
+        justify-content: center;
+        padding-left: 0em;
+        box-sizing: border-box;
+    }
+
 
 }
 
@@ -289,6 +296,7 @@ a.fab:hover::after {
     }
 
     .coloum-kanan-skill {
+        margin-top: 30px;
         order: 1;
     }
 

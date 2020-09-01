@@ -1,0 +1,274 @@
+/* * {
+    border: 1px solid yellow;
+} */
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 5px;
+}
+
+.head {
+    flex-basis: 15%;
+}
+
+.head .nav {
+    margin: 0;
+    padding: 10px;
+}
+
+.nav .header {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.nav .header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px;
+
+}
+
+.nav .header img {
+    width: 4%;
+    height: 4%;
+    justify-content: flex-end;
+    margin: 10px 15px;
+}
+
+.main {
+    flex-basis: 85%;
+}
+
+.main-content {
+    display: flex;
+    order: 1;
+    flex: 0.3;
+}
+
+
+.hero {
+    order: 2;
+    flex: 9;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.hero .content {
+    order: 1;
+    flex: 1;
+    display: flex;
+
+    padding: 0px 50px;
+}
+
+.hero .hero-img {
+    order: 2;
+    margin: auto;
+}
+
+.hero .content .content-container {
+    margin-top: 90px;
+}
+
+.content-judul,
+.content-tagline,
+.content-deskripsi {
+    margin: -25px 0px;
+}
+
+.content-judul p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -35px;
+}
+
+.content-tagline p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 37px;
+    font-weight: medium;
+}
+
+.content-deskripsi p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: reguler;
+    color: #9E7474;
+    line-height: 38px;
+}
+
+.btn {
+
+    margin-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    margin: auto;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 50px;
+    box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.button:hover {
+    box-shadow: 0px 5px 28px rgba(0, 0, 0, 0.5);
+}
+
+.cta {
+    background-color: #D85A5A;
+    color: #fff;
+}
+
+.hero div img {
+    order: 1;
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+
+}
+
+.notice {
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.notice .breakfast {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.notice .time {
+    font-weight: normal;
+    color: #9E7474;
+}
+
+.balok {
+    margin: auto;
+    width: 8px;
+    height: 287px;
+    margin: auto;
+    background-color: #D85A5A;
+}
+
+.balok-kecil {
+    height: 30px;
+    margin-top: -120px;
+}
+
+.aside {
+    display: flex;
+    flex: 0.2;
+    flex-direction: column;
+}
+
+@media (max-width: 517px) {
+    .hero {
+        order: 2;
+        flex: 9;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .content {
+        order: 2;
+        padding: 3px;
+    }
+
+    .hero .hero-img {
+        order: 1;
+        margin: auto;
+    }
+
+    .hero div img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+
+    }
+
+    .balok,
+    .balok-kecil,
+    .nav .header img {
+        display: none;
+    }
+}
+
+@media (max-width: 407px) {
+    .hero {
+        order: 2;
+        flex: 8;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .content {
+        order: 2;
+        padding: 0px;
+    }
+
+    .hero .hero-img {
+        order: 1;
+        margin: auto;
+    }
+
+    .hero div img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+
+    }
+
+    .content-judul p {
+
+        font-size: 42px;
+
+    }
+
+    .content-tagline p {
+
+        font-size: 30px;
+
+    }
+
+    .content-deskripsi p {
+
+        font-size: 12px;
+
+        line-height: 30px;
+    }
+
+}
