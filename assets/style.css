@@ -222,7 +222,8 @@ a {
     }
 
     .balok,
-    .balok-kecil {
+    .balok-kecil,
+    .nav .header img {
         display: none;
     }
 }
