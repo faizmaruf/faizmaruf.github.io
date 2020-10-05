@@ -323,11 +323,13 @@ div .kembali {
         font-size: 16px;
         color: #f1f1f1;
         margin: auto;
+
     }
 
     .main {
         margin-left: 0px;
         margin-top: 60px;
+
     }
 
     .main-kursus {
@@ -335,7 +337,7 @@ div .kembali {
         margin-top: 60px;
     }
 
-    .sidenav .active a {
+    .sidenav .active {
         background-color: #4346E1;
     }
 
@@ -344,7 +346,11 @@ div .kembali {
     }
 
     .kelas-progres a {
-        font-size: 12px;
+        font-size: 8px;
+    }
+
+    .judul-des {
+        font-size: 8px;
     }
 
     .content-video {
@@ -363,7 +369,7 @@ div .kembali {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main {
-        margin-bottom: 100px;
+        margin-bottom: 400px;
     }
 }
 

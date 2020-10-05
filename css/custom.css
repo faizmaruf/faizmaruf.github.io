@@ -158,6 +158,14 @@ body {
     font-weight: lighter;
 }
 
+.text-mentor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    color: #475677;
+    font-weight: normal;
+    margin: auto;
+}
+
 .text-rekomendasi-bold {
 
     font-weight: bold;
@@ -185,6 +193,25 @@ body {
     padding-right: 5px;
     padding-left: 5px;
 }
+
+.card-mentor {
+    width: 250px;
+    height: 280px;
+    border: 0px solid red;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 18px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.img-mentor {
+    width: 120px;
+    height: 120px;
+    margin: 30px auto !important;
+}
+
+
 
 .card-kelas {
     width: 334px;
@@ -565,6 +592,39 @@ span i {
 
         font-size: 15px;
     }
+
+    .mengapa-harus {
+
+        font-size: 26px;
+
+
+    }
+
+    .memilih-kami {
+        font-size: 46px;
+
+    }
+
+    .deskripsi-mengapa {
+
+        font-size: 12px;
+
+    }
+
+    .list-keunggulan {
+
+        font-size: 14px;
+
+    }
+
+    .list-keunggulan ul li {
+        margin-top: 15px;
+    }
+
+    .footer {
+        height: 120px;
+    }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -574,6 +634,10 @@ span i {
 @media (max-width: 991.98px) {
     .container-formulir {
         flex-direction: column-reverse;
+    }
+
+    .containerkeunggulan {
+        flex-direction: column;
     }
 }
 
