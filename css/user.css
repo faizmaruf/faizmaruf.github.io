@@ -41,6 +41,7 @@ body {
 }
 
 .nama-user {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 18px;
     font-weight: normal;
@@ -70,7 +71,11 @@ body {
     /* border: 2px solid red; */
     border-radius: 8px;
     height: 4em;
+}
 
+.list-sidenav-kursus:hover {
+    background-color: #ff7f1f;
+    opacity: 60%;
 }
 
 .sidenav-kursus .list-sidenav-kursus a {
@@ -128,8 +133,10 @@ body {
     margin: auto 28px;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav :hover {
+    background-color: #4346E1;
+    color: #f1f1f1 !important;
+    opacity: 80%;
 }
 
 .main-kursus {
@@ -329,7 +336,6 @@ div .kembali {
     .main {
         margin-left: 0px;
         margin-top: 60px;
-
     }
 
     .main-kursus {

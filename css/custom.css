@@ -151,6 +151,12 @@ body {
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
+.button-primary-gb:hover {
+    background-color: #746eff;
+    color: #fff;
+    text-decoration: none;
+}
+
 .text-rekomendasi {
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
@@ -188,6 +194,12 @@ body {
     color: #475677;
 }
 
+.button-lebih-banyak:hover {
+    text-decoration: none;
+    background-color: #475677;
+    color: #f1f1f1;
+}
+
 /* ------------------------- card kelas --------------- */
 .col-md {
     padding-right: 5px;
@@ -219,7 +231,7 @@ body {
     border: 0px solid red;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0px 18px 30px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 18px 30px 0px rgba(0, 0, 0, 0.05) !important;
     display: flex;
     flex-direction: column;
 }
@@ -512,6 +524,27 @@ span i {
     width: 80%;
     height: 40px;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }
 
 /* ------------------------- //Regitrasi Page --------------- */
