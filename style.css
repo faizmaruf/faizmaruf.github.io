@@ -1,0 +1,16 @@
+* {
+  border: 1px solid yellow;
+}
+.container {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.container-fluid {
+  height: 100%;
+  background-color: yellow;
+  display: block;
+}
+.container-fluid:nth-child(2) {
+  background-color: blue;
+  display: block;
+}
