@@ -12,3 +12,53 @@
 .container-fluid:nth-child(2) {
   background-color: blue;
 }
+.blocks {
+  position: absolute;
+  width: 1000px;
+  height: 12px;
+  background-color: brown;
+  border-radius: 20px;
+}
+.blocks ul {
+  display: block;
+}
+
+.blocks ul li {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  position: absolute;
+  top: -50%;
+}
+.blocks ul li:nth-child(1) {
+  left: 4%;
+}
+.blocks ul li:nth-child(2) {
+  left: 13%;
+}
+.blocks ul li:nth-child(3) {
+  left: 23%;
+}
+.blocks ul li:nth-child(4) {
+  left: 33%;
+}
+.blocks ul li:nth-child(5) {
+  left: 43%;
+}
+.blocks ul li:nth-child(6) {
+  left: 53%;
+}
+.blocks ul li:nth-child(7) {
+  left: 63%;
+}
+.blocks ul li:nth-child(8) {
+  left: 73%;
+}
+.blocks ul li:nth-child(9) {
+  left: 83%;
+}
+.blocks ul li:nth-child(10) {
+  left: 93%;
+}
