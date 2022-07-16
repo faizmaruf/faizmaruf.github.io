@@ -14,9 +14,17 @@
 }
 .blocks {
   position: absolute;
-  width: 1000px;
+  width: 700px;
   height: 12px;
-  background-color: brown;
+  background: rgb(240, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 0, 0, 1) 0%,
+    rgba(94, 138, 10, 1) 25%,
+    rgba(27, 201, 15, 1) 50%,
+    rgba(0, 227, 17, 1) 75%,
+    rgba(0, 255, 40, 1) 100%
+  );
   border-radius: 20px;
 }
 .blocks ul {
@@ -25,40 +33,98 @@
 
 .blocks ul li {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid rgb(50, 150, 50);
   border-radius: 50%;
-  background-color: aliceblue;
+  background-color: rgba(255, 255, 255);
   position: absolute;
-  top: -50%;
+  top: -20%;
 }
 .blocks ul li:nth-child(1) {
   left: 4%;
+  border: 3px solid #f00000;
 }
 .blocks ul li:nth-child(2) {
   left: 13%;
+  border: 3px solid #f00000;
 }
 .blocks ul li:nth-child(3) {
   left: 23%;
+  border: 3px solid #5e8a0a;
 }
 .blocks ul li:nth-child(4) {
   left: 33%;
+  border: 3px solid #5e8a0a;
 }
 .blocks ul li:nth-child(5) {
   left: 43%;
+  border: 3px solid #1bc90f;
 }
 .blocks ul li:nth-child(6) {
   left: 53%;
+  border: 3px solid #1bc90f;
 }
 .blocks ul li:nth-child(7) {
   left: 63%;
+  border: 3px solid #00e311;
 }
 .blocks ul li:nth-child(8) {
   left: 73%;
+  border: 3px solid #00e311;
 }
 .blocks ul li:nth-child(9) {
   left: 83%;
+  border: 3px solid #00ff28;
 }
 .blocks ul li:nth-child(10) {
   left: 93%;
+  border: 3px solid #00ff28;
+}
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(128, 128, 128);
+  border: 0px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  z-index: 1;
+}
+
+ul li:hover .tooltip-text {
+  visibility: visible;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+ul li:nth-child(1):hover .tooltip-text,
+ul li:nth-child(2):hover .tooltip-text {
+  background-color: #f00000;
+  color: #fff;
+}
+ul li:nth-child(3):hover .tooltip-text,
+ul li:nth-child(4):hover .tooltip-text {
+  background-color: #5e8a0a;
+  color: #fff;
+}
+ul li:nth-child(5):hover .tooltip-text,
+ul li:nth-child(6):hover .tooltip-text {
+  background-color: #1bc90f;
+  color: #fff;
+}
+ul li:nth-child(7):hover .tooltip-text,
+ul li:nth-child(8):hover .tooltip-text {
+  background-color: #00e311;
+  color: #fff;
+}
+ul li:nth-child(9):hover .tooltip-text,
+ul li:nth-child(10):hover .tooltip-text {
+  background-color: #00ff28;
+  color: #fff;
 }
