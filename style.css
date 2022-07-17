@@ -81,6 +81,12 @@
   left: 93%;
   border: 3px solid #00ff28;
 }
+.blocks ul li span:nth-child(1) {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: -25%;
+}
 .tooltip-text {
   visibility: hidden;
   width: 120px;
@@ -101,7 +107,7 @@
 ul li:hover .tooltip-text {
   visibility: visible;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 1px 1px 0 #000;
+    -1px 1px 0 #000, 1px 1px 0 rgba(0, 0, 0, 0.244);
 }
 ul li:nth-child(1):hover .tooltip-text,
 ul li:nth-child(2):hover .tooltip-text {
