@@ -12,3 +12,20 @@
 .container-fluid:nth-child(2) {
   background-color: blue;
 }
+.img-profile {
+  margin: auto;
+  clip-path: circle(42.6% at 52% 43%);
+  width: 175px;
+  box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 36px 63px -7px rgba(80, 49, 49, 0.32);
+}
+
+img:hover {
+  z-index: 100;
+  transform: scale(1.02);
+  transition: 500ms;
+  box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+}
