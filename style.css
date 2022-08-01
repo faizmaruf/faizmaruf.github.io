@@ -39,6 +39,6 @@ img:hover {
 
 @media only screen and (max-width: 992px) {
   .container {
-    padding: 0;
+    padding: 0 1em;
   }
 }
