@@ -1,17 +1,24 @@
 * {
   border: 1px solid rgb(0, 0, 0);
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 .container {
   height: 100%;
   background-color: antiquewhite;
+  /* margin: 0 100px; */
+  padding: 0 8rem;
 }
 .container-fluid {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: yellow;
 }
-.container-fluid:nth-child(2) {
-  background-color: blue;
+.full-page {
+  height: 100vh;
 }
+
 .img-profile {
   margin: auto;
   clip-path: circle(42.6% at 52% 43%);
@@ -28,4 +35,10 @@ img:hover {
   box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
   -moz-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    padding: 0;
+  }
 }
