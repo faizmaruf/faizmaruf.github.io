@@ -9,6 +9,8 @@ body {
   height: 100%;
   background-color: antiquewhite;
   /* margin: 0 100px; */
+}
+.p-container {
   padding: 0 8rem;
 }
 .container-fluid {
@@ -47,8 +49,8 @@ img:hover {
 }
 
 @media only screen and (max-width: 992px) {
-  .container {
-    padding: 0 1em;
+  .p-container {
+    padding: 0 8rem;
   }
   .about {
     flex-direction: column;
