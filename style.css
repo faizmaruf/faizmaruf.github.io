@@ -1,10 +1,13 @@
 * {
-  /* border: 1px solid rgb(0, 0, 0); */
+  border: 1px solid rgb(0, 0, 0);
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
+}
+a {
+  color: inherit;
 }
 .container {
   height: 100%;
@@ -25,6 +28,9 @@ body {
 .half-page {
   min-height: 50vh;
 }
+.quarter-page {
+  min-height: 25vh;
+}
 .faiz {
   min-width: 100%;
 }
@@ -38,6 +44,13 @@ body {
   margin: auto;
   clip-path: circle(42.6% at 52% 43%);
   width: 175px;
+  box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 36px 63px -7px rgba(80, 49, 49, 0.32);
+}
+.img-tools {
+  margin: auto;
+  width: 130px;
   box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: 0px 36px 63px -7px rgba(0, 0, 0, 0.32);
   -moz-box-shadow: 0px 36px 63px -7px rgba(80, 49, 49, 0.32);
