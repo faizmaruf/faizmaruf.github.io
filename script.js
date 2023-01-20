@@ -46,24 +46,6 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 // - show modal
 
 
-const textModal = (label, description, image, technology) => {
-    const modalLabel = document.querySelector("#modalLabel");
-    // const modalBody = document.querySelector("#modalBody");
-    const modalDescription = document.querySelector("#modalDescription");
-    const modalLink = document.querySelector("#modalLink");
-    const modalImg = document.querySelector("#modalImg");
-    modalLabel.innerHTML = '';
-    modalLabel.appendChild(document.createTextNode(label));
-    // modalBody.innerHTML = '';
-    // modalBody.appendChild(document.createTextNode(body));
-    modalDescription.innerHTML = '';
-    modalDescription.appendChild(document.createTextNode(description));
-    modalImg.src = image;
-
-    list(technology)
-    // modalImg.appendChild(document.createTextNode(description));
-}
-
 const portofolio = [
     {
         id: '1',
@@ -91,11 +73,27 @@ const portofolio = [
     }
 ]
 
+//function for add text to each tag at modal
+const textModal = (label, description, image, technology, link) => {
+    const modalLabel = document.querySelector("#modalLabel");
+    // const modalBody = document.querySelector("#modalBody");
+    const modalDescription = document.querySelector("#modalDescription");
+    const modalLink = document.querySelector("#modalLink");
+    const modalImg = document.querySelector("#modalImg");
+    modalLabel.innerHTML = '';
+    modalLabel.appendChild(document.createTextNode(label));
+    // modalBody.innerHTML = '';
+    // modalBody.appendChild(document.createTextNode(body));
+    modalDescription.innerHTML = '';
+    modalDescription.appendChild(document.createTextNode(description));
+    modalImg.src = image;
+    modalLink.src = link;
+    list(technology);
+    // modalImg.appendChild(document.createTextNode(description));
+}
 
-const porto = portofolio.filter((portofoli) => portofoli.id == 1)[0];
-console.log(porto)
 
-//create list tech
+//function for create list tech
 const list = (list) => {
     const ul = document.querySelector("#modalList");
     while (ul.hasChildNodes()) {
@@ -110,45 +108,12 @@ const list = (list) => {
 }
 
 
-// function for declar
+// function for clicked
 const portoAsli = document.querySelectorAll(".porto");
 portoAsli.forEach(occurence => {
     occurence.addEventListener('click', (e) => {
         const porto = portofolio.filter((portofoli) => portofoli.id == e.delegateTarget.id)[0];
-        // const porto = portofolio.filter((portofoli) => portofoli.id == 3);
-        // console.log(porto.technology);
-        ;
-        textModal(porto.label, porto.description, porto.img, porto.technology);
+        textModal(porto.label, porto.description, porto.img, porto.technology, porto.link);
         console.log(e.delegateTarget.id)
-        // console.log('A link was clicked');
     });
 });
-
-
-
-
-// console.log(portoAsli[1]);
-// console.log(portoAsli.attributes);
-
-// const soup = document.querySelector(".porto");
-// console.log(soup.attributes.idporto.value);
-// portoAsli.addEventListener('click', (event) => {
-// textModal("ini judul suop", "ini body suop");
-// // console.log('test')
-// // console.log(porto);
-// console.log(event);
-// })
-// portoAsli.onclick = function (e) {
-//     textModal("ini judul suop", "ini body suop");
-//     // console.log('test')
-//     // console.log(porto);
-//     console.log(e);
-// };
-
-// const guruBisa = document.querySelector("#guruBisa");
-// guruBisa.addEventListener('click', () => {
-//     textModal("ini judul gurubisa", "ini body gurubisa")
-//     // console.log('test gurubisa')
-// })
-
-
