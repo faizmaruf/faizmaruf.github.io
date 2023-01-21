@@ -82,9 +82,17 @@ const portofolio = [
     {
         id: '3',
         label: 'E-verification',
-        description: 'lorem ipsum color dumet',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis beatae, iusto vel quisquam temporibus repellendus dolores pariatur laborum porro saepe aut nesciunt ullam lo',
         link: '#',
         img: 'images/porto/qrcode.jpeg',
+        technology: ['HTML, CSS', 'JQuery', 'Bootstrap', 'CodeIgneter', 'Dompdf']
+    },
+    {
+        id: '4',
+        label: 'Web Kemala',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis beatae, iusto vel quisquam temporibus repellendus dolores pariatur laborum porro saepe aut nesciunt ullam lo',
+        link: '#',
+        img: 'images/porto/kemala.jpeg',
         technology: ['HTML, CSS', 'JQuery', 'Bootstrap', 'CodeIgneter', 'Dompdf']
     }
 ]
@@ -107,6 +115,7 @@ const textModal = (label, description, image, technology, link) => {
     modalDescription.appendChild(document.createTextNode(description));
     modalImg.src = image;
     // modalLink.src = link;
+    modalHref.href = link;
     list(technology);
     // modalImg.appendChild(document.createTextNode(description));
 }
