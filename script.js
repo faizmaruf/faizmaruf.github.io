@@ -74,18 +74,18 @@ const portofolio = [
     {
         id: '2',
         label: 'GuruBisa',
-        description: 'lorem ipsum color dumet sipp',
+        description: 'Guru Bisa is an ecourse that aims to improve the competence of teaching staff in the field of information technology',
         link: '#',
         img: 'images/porto/gurubisa.jpeg',
-        technology: ['HTML', 'CSS', 'Bootstrap', 'CodeIgneter']
+        technology: ['HTML, CSS', 'JQuery', 'Bootstrap', 'CodeIgneter']
     },
     {
         id: '3',
-        label: 'e-verification',
+        label: 'E-verification',
         description: 'lorem ipsum color dumet',
         link: '#',
         img: 'images/porto/qrcode.jpeg',
-        technology: ['HTML', 'CSS', 'Bootstrap', 'JQuery']
+        technology: ['HTML, CSS', 'JQuery', 'Bootstrap', 'CodeIgneter', 'Dompdf']
     }
 ]
 
@@ -96,14 +96,17 @@ const textModal = (label, description, image, technology, link) => {
     const modalDescription = document.querySelector("#modalDescription");
     const modalLink = document.querySelector("#modalLink");
     const modalImg = document.querySelector("#modalImg");
+    const modalHref = document.querySelector("#modalHref");
     modalLabel.innerHTML = '';
     modalLabel.appendChild(document.createTextNode(label));
+    modalHref.innerHTML = 'Go to ';
+    modalHref.appendChild(document.createTextNode(label));
     // modalBody.innerHTML = '';
     // modalBody.appendChild(document.createTextNode(body));
     modalDescription.innerHTML = '';
     modalDescription.appendChild(document.createTextNode(description));
     modalImg.src = image;
-    modalLink.src = link;
+    // modalLink.src = link;
     list(technology);
     // modalImg.appendChild(document.createTextNode(description));
 }
@@ -111,6 +114,7 @@ const textModal = (label, description, image, technology, link) => {
 
 //function for create list tech
 const list = (list) => {
+    // console.log(list);
     const ul = document.querySelector("#modalList");
     while (ul.hasChildNodes()) {
         ul.removeChild(ul.firstChild);
@@ -129,7 +133,8 @@ const portoAsli = document.querySelectorAll(".porto");
 portoAsli.forEach(occurence => {
     occurence.addEventListener('click', (e) => {
         const porto = portofolio.filter((portofoli) => portofoli.id == e.delegateTarget.id)[0];
+        // console.log(porto);
         textModal(porto.label, porto.description, porto.img, porto.technology, porto.link);
-        console.log(e.delegateTarget.id)
+        // console.log(e.delegateTarget.id)
     });
 });
