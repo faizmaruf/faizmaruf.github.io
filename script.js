@@ -1,4 +1,5 @@
 // import { portofolio } from 'data.js';
+// const portofolio = require('./data');
 // console.log(portofolio);
 // function for hide navbar
 const portofolio = [
@@ -73,6 +74,14 @@ const portofolio = [
         link: '#',
         img: 'images/porto/websurveyor.png',
         technology: ['HTML, CSS', 'JQuery', 'Bootstrap', 'Laravel', 'Dompdf', 'Leaflet Js', 'Chart Js']
+    },
+    {
+        id: '10',
+        label: 'KiriminAja Clone',
+        description: 'ReVamp KiriminAja',
+        link: 'https://golden-mandazi-0f7227.netlify.app/',
+        img: 'images/porto/kiriminaja.png',
+        technology: ['HTML, CSS', 'Tailwind', 'Vue 3', 'Nuxt 3']
     }
 ];
 
